@@ -18,3 +18,12 @@ public static List<char[][]> parseGrids(List<String> lines) {
         }
         return grids;
     }
+
+
+      private static char[][] toMatrix(List<String> block) {
+            char[][] m = new char[block.size()][];
+            for (int r = 0; r < block.size(); r++) {
+                m[r] = block.get(r).toCharArray();
+            }
+            return m;
+        }
