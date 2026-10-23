@@ -2,6 +2,6 @@
 
 had fun with my two friends
 - evel4net/ Emma Vasii
-- Vio Ungureanu
+- Vio Ungureanu (mvp!)
 
 our code for the 42nd edition classic CCC challenge
