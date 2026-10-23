@@ -1,0 +1,20 @@
+public static List<char[][]> parseGrids(List<String> lines) {
+        List<char[][]> grids = new ArrayList<>();
+        List<String> block = new ArrayList<>();
+
+        for (int i = 1; i < lines.size(); i++) {
+            String line = lines.get(i).trim();
+            if (line.isEmpty()) {
+                if (!block.isEmpty()) {
+                    grids.add(toMatrix(block));
+                    block.clear();
+                }
+            } else {
+                block.add(line);
+            }
+        }
+        if (!block.isEmpty()) {
+            grids.add(toMatrix(block));
+        }
+        return grids;
+    }
