@@ -4,6 +4,6 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Runner.run(1, new Level1());
+        Runner.run(4, new Level4());
     }
 }
